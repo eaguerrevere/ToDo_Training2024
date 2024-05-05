@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ToDo_Training2024App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }
-    }
-}
+                .modelContainer(for: ToDoItem.self)
+        } //closes WindowGroup
+    } //closes body
+} //closes struct
