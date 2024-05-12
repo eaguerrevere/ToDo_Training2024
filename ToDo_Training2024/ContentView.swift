@@ -70,7 +70,7 @@ struct ContentView: View {
             let toDoItem = toDos[offset]
             modelContext.delete(toDoItem)
         }
-    }
+    } //closes deleteToDo func
     
 } //closes ContentView struct
 
